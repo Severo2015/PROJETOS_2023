@@ -2,17 +2,17 @@ public class CalculoMaca{
   
   public static void main(String args[]){
     
+        int    quantidade = 30;
+        float  preco30    = 0.30f;
+        float  preco25    = 0.25f;
+        float  total      = 0.00f;
+        
+        if (quantidade >= 12) {
+          total = quantidade * preco30;
+        }else{
+          total = quantidade * preco25;      
+        }
     
-    int    quantidade = 30;
-    float  preco30    = 0.30f;
-    float  preco25    = 0.25f;
-    float  total      = 0.00f;
-    
-    if (quantidade >= 12) {
-      total = quantidade * preco30;
-    }else{
-      total = quantidade * preco25;      
-    }
-
-   system.out.println(total);
+       System.out.println(total);
+  }
 }
