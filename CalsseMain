@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class ClasseMain{
+  
+  public static void main(String args[]){     // Método ou sub algoritmo
+  
+      int num01 = 10;
+      int num02 = 20;
+      
+      int soma  = Soma(num01,num02);
+      int sobra = Subtrai(num01,num02);
+        
+      System.out.println(soma);  
+      System.out.println(sobra); 
+  }
+  
+  public static int Soma(int a, int b){
+        int total = a + b;
+        return total;
+  }
+  
+  public static int Subtrai(int a, int b){
+        if (a>=b)
+           return  a - b;
+        else
+           return  b - a;
+       
+  }
+  
+}
