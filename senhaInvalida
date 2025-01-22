@@ -1,0 +1,21 @@
+public class ValidaSenha{
+    
+    public static void main(String args[]){
+        
+        int senha = 1234;
+        int senhaInvalida = 1243;
+        boolean ehMaior;
+        
+        ehMaior = (senha == senhaInvalida);
+        
+        if (ehMaior) 
+        {
+            System.out.println("SENHA INFORMADA VALIDA  ----> " + senha + " Informada " + senhaInvalida);
+        }
+        else 
+        {
+            System.out.println("SENHA INFORMADA INVALIDA  ----> " + senha + " Informada " + senhaInvalida);
+        }
+      
+    }
+}
