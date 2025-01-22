@@ -1,0 +1,22 @@
+public class Calculo{
+    
+    public static void main(String args[]){
+        
+        int var01 = 10;
+        int var02 = 20;
+        boolean ehMaior;
+        
+        ehMaior = (var01 > var02);
+        
+        if (ehMaior) 
+        {
+            System.out.println("VAR01  E MAIOR ----> " + var01);
+        }
+        else 
+        {
+            System.out.println("VAR02  E MAIOR ----> " + var02);
+        }
+        
+        
+    }
+}
