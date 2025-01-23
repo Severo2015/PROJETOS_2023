@@ -1,29 +1,29 @@
+import java.util.Scanner; // Import the Scanner class
+
 public class CalculoMaca{
   
   public static void main(String args[]){
     
-        int    quantidade = 30;
-        float  total;
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("digite Qtd = ");
+        
+        int    quantidade =  teclado.nextInt();
+        float  total = 0.00f;
+        
+        total = Calcula(quantidade);
 
-        if (quantidade >= 12) {
-          total = Calcula25(quantidade);
-        }else{
-          total = Calcula30(quantidade);     
-        }
-    
        System.out.println(total);
        
   }
   
-  public static float Calcula30(int qtd){
+  public static float Calcula(int qtd){
     
      float  preco30    = 0.30f;
-     return qtd * preco30;
+     float  preco25    = 0.25f;
+     
+      if (qtd >= 12) {
+            return  (qtd * preco25);
+      }else{
+            return  (qtd * preco30);    
+      }  
   }
-  
-   public static float Calcula25(int qtd){
-    
-      float  preco25    = 0.25f;
-      return qtd * preco25;
-  }
-}
