@@ -3,16 +3,27 @@ public class CalculoMaca{
   public static void main(String args[]){
     
         int    quantidade = 30;
-        float  preco30    = 0.30f;
-        float  preco25    = 0.25f;
-        float  total      = 0.00f;
-        
+        float  total;
+
         if (quantidade >= 12) {
-          total = quantidade * preco30;
+          total = Calcula25(quantidade);
         }else{
-          total = quantidade * preco25;      
+          total = Calcula30(quantidade);     
         }
     
        System.out.println(total);
+       
+  }
+  
+  public static float Calcula30(int qtd){
+    
+     float  preco30    = 0.30f;
+     return qtd * preco30;
+  }
+  
+   public static float Calcula25(int qtd){
+    
+      float  preco25    = 0.25f;
+      return qtd * preco25;
   }
 }
