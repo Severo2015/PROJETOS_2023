@@ -1,0 +1,28 @@
+package Introducao;
+
+import java.util.Scanner;
+
+public class Listas {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner(System.in);
+		
+		
+		int[]    idadeAluno = new int[5];
+		String[] nomeAluno  = new String[5];
+		
+		for(int x=0; x<5;x=x+1) {
+			System.out.println("Informe o Nome ......: ");
+			nomeAluno[x] = teclado.next();
+			
+			System.out.println("Informe o Idade ......: ");
+			idadeAluno[x] = teclado.nextInt();
+
+		    }
+		
+		for(int x=0; x<5;x=x+1) {
+			System.out.println(nomeAluno[x] + " :  IDADE : "+ idadeAluno[x]);
+		    }
+	}
+}
