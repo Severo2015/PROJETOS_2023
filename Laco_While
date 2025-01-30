@@ -1,0 +1,19 @@
+package Introducao;
+
+public class Lacos_While {
+
+	public static void main(String[] args) {
+
+		int x = 1;
+		
+		while(x<=30) {
+			int resto = x%5;
+
+			System.out.println(" Contador ---> " + x);
+			if (resto==0) {
+				System.out.println("XAXA");
+			}		
+			x=x+1;
+		}	
+	}
+}
