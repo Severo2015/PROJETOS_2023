@@ -1,0 +1,40 @@
+package Introducao;
+
+import java.util.Scanner;
+
+public class ListaSoma {
+
+	public static void main(String[] args) {
+
+		Scanner teclado = new Scanner(System.in);
+		
+		int soma  = 0;
+		int media = 0;
+		int maior = 0;
+		int menor = 99;
+		
+		int[]    qtd = new int[5];
+		
+		for(int x=0; x<5; x++) {
+			System.out.print("Qtd....: " + "\n");
+			qtd[x] = teclado.nextInt();
+		    }
+		
+		for(int x=0; x<5; x++) {
+				soma  = soma + qtd[x];
+				media = soma / (x + 1);
+				if (maior < qtd[x]) 
+					maior = qtd[x];
+				
+				if (menor > qtd[x]) 
+					menor = qtd[x];
+				
+		    }
+		
+		
+		System.err.println("  SOMA  ----------> " + soma);
+		System.err.println("  MEDIA ----------> " + media);
+		System.err.println("  MAIOR ----------> " + maior);	
+		System.err.println("  MENOR ----------> " + menor);	
+	}
+}
