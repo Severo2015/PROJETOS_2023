@@ -1,0 +1,81 @@
+package Introducao;
+
+import java.util.Scanner;
+
+public class MostraDia {
+
+    public static void main(String args[]){
+      int diaSemana =0;
+      
+      Scanner teclado = new Scanner(System.in); 
+      System.out.println("Informe o Dia da Semana :  ");
+      diaSemana = teclado.nextInt();
+      
+      MostraAninhado(diaSemana);
+      MostraSwitch(diaSemana);
+      teclado.close();
+      
+    }
+    
+    private static void MostraSwitch(int diaSemana) {
+
+    	switch(diaSemana) {
+	    	case 1 :
+	    		System.out.println("Domingo");
+	    		break;
+	    	case 2 :
+	    		System.out.println("Segunda");
+	    		break;
+	    	case 3 :
+	    		System.out.println("Terça");
+	    		break;
+	    	case 4 :
+	    		System.out.println("Quarta");
+	    		break;
+	    	case 5 :
+	    		System.out.println("Quinta");
+	    		break;
+	    	case 6 :
+	    		System.out.println("Sexta");
+	    		break;
+	    	case 7 :
+	    		System.out.println("Sabado");
+	    		break;
+	    	default :
+	    		System.out.println("Numero Invalido"); 	
+	    		break;
+    	}
+	}
+
+	public static void MostraAninhado(int dia){
+        
+        if (dia==1) {System.out.println("Domingo");}
+        else
+        {
+          if (dia==2) {System.out.println("Segunda-Feira");}
+          else  
+          {
+            if (dia==3) {System.out.println("Terça-Feira");}
+            else
+            {
+              if (dia==4) {System.out.println("Quarta-Feira");}
+              else{
+                if (dia==5) {System.out.println("Quinta-Feira");}
+                else
+                {
+                  if (dia==6) {System.out.println("Sexta-Feira");}
+                  else
+                  {
+                    if (dia==7) {System.out.println("Sabado"); }
+                    else
+                    {
+                      System.out.println("Digitacao Errada"); 
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+}
