@@ -1,0 +1,21 @@
+package Introducao;
+
+import java.math.*;
+
+public class Laco_De_Ate {
+
+	public static void main(String[] args) {
+		int x = 8;
+		int resto = 0;
+		
+		while(x<=42) {			
+			resto = x%2;
+			
+			if (resto==1) {				
+				System.out.println(" Impares ---> " + x);				
+			}
+			x=x+1;
+		}	
+		System.out.println(Math.pow(2, 3));
+	}
+}
