@@ -1,0 +1,22 @@
+package Introducao;
+
+public class Lacos_Impares {
+
+	public static void main(String[] args) {
+
+		int numero = 0;
+		
+		for (int x = 1; x < 20; x = x + 2) {
+			
+			System.out.println(" Numeros Impares ---> " + x);
+		}
+		
+		numero=1;
+	    while(numero<21) {
+	    	System.out.println(" Numeros Impares ---> " + numero);
+	    	numero = numero + 2;
+	    }
+
+	}
+
+}
